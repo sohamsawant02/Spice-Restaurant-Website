@@ -1,0 +1,70 @@
+<script type="text/javascript">
+window.onload = function() {
+  var c = document.getElementById('snacks');
+  var d = document.getElementById('lunch');
+  var e = document.getElementById('desserts');
+  c.onclick = function() {
+    if (c.value == "snacks") {
+	document.getElementById('answer1').style.display = 'inline';
+	document.getElementById('answer2').style.display = '';
+    document.getElementById('answer3').style.display = '';
+	}
+  }
+
+  d.onclick = function() {
+    if (d.value == "lunch") {
+	document.getElementById('answer2').style.display = 'inline';
+	document.getElementById('answer1').style.display = '';
+    document.getElementById('answer3').style.display = '';
+	}
+  }
+  
+  e.onclick = function() {
+    if (e.value == "desserts") {
+	document.getElementById('answer3').style.display = 'inline';
+	document.getElementById('answer2').style.display = '';
+    document.getElementById('answer1').style.display = '';
+	}
+  }
+  
+}
+</script>
+
+<style type="text/css">
+#answer1 {display:none;}
+#answer2 {display:none;}
+#answer3 {display:none;}
+</style>
+
+<input id="snacks" type="radio" value="snacks" name="hotel"/>
+<label for="snacks">Snacks</label>
+
+<input id="lunch" type="radio" value="lunch" name="hotel"/>
+<label for="lunch">Lunch</label>
+
+<input id="desserts" type="radio" value="desserts" name="hotel"/>
+<label for="desserts">Desserts</label> <br><br>
+
+<p name="answer" id="answer1">
+  
+    <input type="checkbox" value="28"> Idli Sambar
+    <input type="checkbox" value="30"> Mendu Wada
+    <input type="checkbox" value="25"> Sheera
+    <input type="checkbox" value="25"> Upama
+    <input type="checkbox" value="25"> Batata Wada
+</p>
+
+  <p name="answer" id="answer2">
+   <input type="checkbox" value="100"> Veg Thali
+    <input type="checkbox" value="170"> Chicken Thali
+    <input type="checkbox" value="200"> Mutton Thali
+    <input type="checkbox" value="220"> Prawns Thali
+    <input type="checkbox" value="300"> Bheja Thali
+  </p>
+  
+  <p name="answer" id="answer3">
+   <input type="checkbox" value="80"> Gulab Jamun
+    <input type="checkbox" value="120"> Gajar Halwa
+    <input type="checkbox" value="100"> Kheer
+    <input type="checkbox" value="200"> Ice Creame
+  </p>

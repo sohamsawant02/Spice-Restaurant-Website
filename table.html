@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>INDIAN SPICE RESTAURANT</title>
+    <link rel="stylesheet" type="text/css" href="styling.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"> 
+</head>
+<body>
+<nav class="navigation">
+    <div class="header">
+        <img src="images/logo.png" width="200" height="100">
+  <div class="header-right">
+        <a href="restaurant.html"><b>HOME</b></a> 
+        <a href="restaurant.html"><b>ABOUT US</b></a> 
+        <a href="restaurant.html"><b>FOOD GALLERY</b></a> 
+        <a href="restaurant.html"><b>MENU</b></a> 
+        <a href="#"><b>BOOK A TABLE</b></a> 
+        <a href="login.html"><b>ORDER ONLINE</b></a> 
+        <a href="restaurant.html"><b>CONTACT</b></a>
+        <a href="login.html"><b>Login</b></a>
+  </div>
+</div>
+</nav>
+    
+<!-- Book a Table section -->
+<section id="booking"  style="background-image: url('images/table.png');">
+<br>
+<p><center><h1>WELCOME TO INDIAN SPICE</h1></center></p>
+<center><h2>Reserve a Table</h2></center>
+
+<form name="myForm" action="" method="post">
+<fieldset>
+<legend>Reserve Your Table</legend>
+
+    <label for="Name">Name:</label><br>
+    <input type="text" id="name" name="name"> <br><br>
+    
+    <label for="email">Email:</label><br>
+    <input type="email" id="email" name="email"> <br><br>
+    
+    <label for="phone">Phone Number:</label><br>
+    <input type="tel" id="phone" name="phone"><br><br>
+    
+    <label for="date">Date of Reservation:</label><br>
+    <input type="date" id="date" name="date" min="new Date()"><br><br>
+    
+    <label for="time">Time of Reservation:</label><br>
+    <input type="time" id="time" name="time"><br><br>
+    
+    <label for="num">Number of Guests:</label><br>
+    <input type="number" id="num" name="num" min="2"><br><br>
+</fieldset>
+</form>   
+
+    <button method="post" onclick="return validateForm()" action=" " class="register">Register</button>
+    <figcaption id="reserved"> </figcaption> <br><br><br><br><br><br><br><br><br><br><br>
+</section>
+
+    <footer class="footer-distributed">
+
+			<div class="footer-left">
+         
+				<h3><span>Indian Spice</span></h3>
+
+				<p class="footer-links">
+					<a href="restaurant.html">Home</a>
+					|
+					<a href="#">Order</a>
+					|
+					<a href="restaurant.html">About</a>
+					|
+                    <a href="#">Book a Table</a>
+                    |
+                    <a href="restaurant.html">Contact</a>
+				</p>
+			</div>
+
+			<div class="footer-center">
+				<div>
+					<i class="fa fa-map-marker" style="font-size:30px;color:white"></i>
+					  <p><span>309 - Rupa Solitaire,
+						 Bldg. No. A - 1, Sector - 1</span>
+						Mahape, Navi Mumbai - 400710</p>
+				</div>
+
+				<div>
+					<i class="fa fa-phone" style="font-size:30px;color:white"></i>
+					<p>+91 22-27782183</p>
+				</div>
+				<div>
+					<i class="fa fa-envelope" style="font-size:30px;color:white"></i>
+					<p><a href="mailto:support@indianspice.com">support@indianspice.com</a></p>
+				</div>
+			</div>
+			<div class="footer-right">
+				<p align="center">Copyright © Indian Spice Restaurant. All Rights Reserved </p>
+			</div>
+		</footer>
+<script src="reservetable.js"></script>
+
+</body>
+</html>
